@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>style 속성(attribute)</title>
+</head>
+<body>
+<!--  
+	일반적인 속성일 때 <시작태그 속성이름="값" 속성이름="값">
+	style 속성일 때 <시작태그 style="속성:값; 속성:값;">
+	style 속성 : 글자색, 배경색, 굵게, 글꼴, 크기, 정렬, 꾸미기 
+-->
+<h1 style="background-color: red; color: white;">한국 ICT 인재 개발원</h1>
+<p style="color: red; font-size: 30px">한국 ICT 인재 개발원</p>
+<span style="background-color: red; color: white;">한국 ICT 인재 개발원</span>
+<hr>
+
+<!-- p 태그 블록레벨이란 정렬 가능 / 인라인 태그는 text-align 사용 불가 -->
+<p style="color: red; text-align: left;">한국 ICT</p>
+<p style="color: red; text-align: right;">한국 ICT</p>
+<p style="color: red; text-align: center;">한국 ICT</p>
+
+<!-- 인라인 태그를 블록 레벨로 변경하면 가운데 정렬 가능 -->
+<p style="text-align: center;">
+<span style="color: red;">한국 ICT</span> </p>
+
+
+<span style="display: block; color: red; text-align: center;">한국 ICT</span>
+
+</body>
+</html>

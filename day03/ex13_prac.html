@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+fieldset{
+width: 600px;
+border-color: gray;
+}
+
+li{
+display: inline-block;
+}
+
+#lastField{
+margin-bottom: 20px;
+margin-top: 20px;
+}
+
+div {
+text-align: center;
+width: 600px;
+margin: 10px;
+}
+ul{
+list-style: none;
+}
+
+.button{
+width: 130px;
+height: 50px;
+font-size: 20px;
+}
+
+
+</style>
+</head>
+<body>
+<h2>로그인</h2>
+<form action="#" method="post" autocomplete="off">
+	<fieldset>
+		<legend>로그인</legend>
+		<label>ID : <input type="text"></label>
+		<label>PW : <input type="text"></label>
+		<input type="submit" value="로그인">	
+	</fieldset>
+</form>
+
+<h2>사용자 정보</h2>
+<form action="#" method="post" autocomplete="off">
+	<fieldset>
+		<legend>사용자 정보</legend>
+		<label>아이디 : <input type="text" placeholder="4자~10사이 공백없이"></label><br>
+		<label>이메일 : <input type="text"></label><br>
+		<label>비밀번호 : <input type="email" placeholder="문자와 숫자, 특수기호 포함"></label><br>
+		<label>비밀번호 확인 : <input type="text"></label><br>
+		<label>가입경로</label>
+		<select>
+			<option>블로그</option>
+		</select><br>
+		<label>메모</label><br><textarea></textarea>
+	</fieldset>
+</form>
+
+<form action="#" method="post" autocomplete="off">
+	<fieldset id="lastField">
+		<legend>이베드와 새로운 소식</legend>
+		<ul>
+			<li><label><input type="radio" name="name" value="y" checked>메일수신</label></li>
+			<li><label><input type="radio" name="name" value="n">메일수신 안함</label></li>
+		</ul>
+	</fieldset>
+<div>
+	<input type="button" class="button" value="가입하기">
+	<input type="button" class="button" value="취소">
+</div>
+</form>
+
+
+</body>
+</html>

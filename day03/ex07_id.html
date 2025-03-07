@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>선택자(selector) : id</title>
+<style type="text/css">
+/* 해당하는 태그를 선택 : 요소 선택자 */
+h2{
+color : tomato;
+}
+/* id 선택자 */
+#fg_01{
+background-color: lightgreen;
+}
+.bg_01{
+background-color :rgba(130,35,210,60);
+}
+
+/* class 선택자 */
+</style>
+</head>
+<body>
+<!-- 
+id는 하나만 선택할 때 사용
+style 태그에서는 id를 #(샵)으로 표현 
+
+class는 여러 요소를 선택할 때 사용
+style 태그에서는 class를 .(점)으로 표현
+
+if id와 class가 같이 있으면 id가 우선순위가 높다.
+ -->
+ <h2>한국 ICT 인재 개발원</h2>
+ <p>한국 ICT 인재 개발원</p>
+ <h3 id="fg_01">한국 ICT 인재 개발원</h3>
+ <h1 class="bg_01">한국 ICT 인재 개발원</h1>
+</body>
+</html>

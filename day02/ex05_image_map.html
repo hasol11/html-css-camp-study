@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이미지 맵</title>
+</head>
+<body>
+<!-- 
+	image map : 하나의 이미지 않에 여러 개의 a 태그를 설정하는 것
+				사각형 영역(react), 원 영역(circle)
+ -->
+ <a href="https://www.namer.com">
+ <img alt="" src="../images/workplace.jpg" usemap="#i_map">
+ </a>
+ <map name="i_map">
+ <!-- 링크 영역 설정; 사각형 (좌상, 우하) -->
+ 	<area alt="google" shap="rect" coords="28,42 272,342" href="https://google.com" title="구글">
+<!-- 링크 영역 설정 : 원 (중심점, 반지름) -->
+ 	<area alt="google" shap="rect" coords="329,298, 40" href="https://www.daum.net" title="구글">
+ </map>
+</body>
+</html>

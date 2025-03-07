@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>form</title>
+</head>
+<body>
+<form action="#" method="post" enctype="multipart/form-data">
+	<fieldset>
+		<legend>나머지 속성들</legend>
+		<ul>
+		<!-- 파일 업로드할 때는 반드시 method="post", enctype="multipart/form-data" -->
+		<!-- 서버에는 이름과 저장된 위치만 들어가게 된다. 그러면 이를 통해 찾아갈 수 있는 것 -->
+			<li><label>업로드 : <input type="file" name="file"></label></li>
+			<li><label>날짜1 : <input type="date" name="date1"></label></li>
+			<li><label>날짜2 : <input type="month" name="date2"></label></li>
+			<li><label>날짜3 : <input type="week" name="date3"></label></li>
+			<li><label>시간1 : <input type="time" name="time1"></label></li>
+			<li><label>시간2 : <input type="datetime-local" name="time2"></label></li>
+			
+			<li><label>날짜4 : <input type="date" min="2025-03-04" max="2025-03-08" name="date1"></label></li>
+			
+			<!-- 슬라이드 막대 -->
+			<li><label>범위 : <input type="range" name="range" min="0" max="100" step="1" value="20"></label></li>
+		</ul>
+	</fieldset>
+	<p><input type="image" src="../images/login.png" alt="로그인"></p>
+	<!-- 이벤트 처리와 관련한 내용 등이 있는 경우에는 대부분 button을 사용한다. -->
+	<p><input type="button" value="제출하기"></p>
+	<p><input type="submit" value="제출하기"></p>
+</form>
+</body>
+</html>
